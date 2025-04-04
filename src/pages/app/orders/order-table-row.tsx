@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { TableCell, TableRow } from "@/components/ui/table";
 import { ArrowRight, Search, X } from "lucide-react";
+import { OrderDetails } from "@/pages/app/orders/order-details";
 
 // export interface OrderTableRowProps {}
 export function OrderTableRow() {
@@ -9,12 +10,13 @@ export function OrderTableRow() {
     <TableRow >
     <TableCell className="w-[100px]">
       <Dialog> 
-        <DialogTrigger asChild>
+        <DialogTrigger asChild > 
           <Button variant="outline" size="xs">
             <Search className="h-3 w-3" />
             <span className="sr-only">Detalhes do pedidos</span>
           </Button>
         </DialogTrigger>
+        <OrderDetails />
       </Dialog>
      
     </TableCell>
