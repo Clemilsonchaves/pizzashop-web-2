@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Utensils } from "lucide-react"
 export function MonthOrdersAmountCard() {
   return (
-    <Card>
+    <Card className=" bg-background shadow-sm dark:bg-background">
       <CardHeader className="flex flex-row items-center justify-between space-y-0  pb-2">
         <CardTitle className="text-base font-semibold">Pedidos no (mês) </CardTitle>
         <Utensils className="h-4 w-4 text-muted-foreground"/>
